@@ -105,13 +105,13 @@ inputs:
       description: |
         The time in seconds after which you want your build to timeout from queue. The default value of Queue Timeout is 600 seconds.
       is_required: false
-  - lambdatest_idle_timeout: 600
+  - lambdatest_idle_timeout: 120
     opts:
       title: Idle Timeout
       category: Automated Test Options
       summary: The time in seconds for maximum running time on a test in the build.
       description: |
-        The time in seconds for maximum running time on a test in the build.
+        The time in seconds for maximum running time on a test in the build. The default value of Queue Timeout is 120 seconds.
       is_required: false
   - lambdatest_geo_location: "FR"
     opts:
