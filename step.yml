@@ -12,7 +12,7 @@ title: |-
 summary: |
   Upload an app apk and an Espresso test apk to LambdaTest and run tests with App Automate.
 description: |
-  This step uploads a provided app apk and test apk to lambdatest. It then will execute the Espresso Tests for the provided apks in LambdaTest's app automate.
+  This step uploads a provided app apk and test apk to LambdaTest. It then will execute the Espresso Tests for the provided apks in LambdaTest's app automate.
 website: https://github.com/LambdaTest/bitrise-step-lambdatest-espresso-app-automate
 source_code_url: https://github.com/LambdaTest/bitrise-step-lambdatest-espresso-app-automate
 support_url: https://github.com/LambdaTest/bitrise-step-lambdatest-espresso-app-automate/issues

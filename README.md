@@ -1,6 +1,6 @@
 # lambdatest-espresso-app-automate
 
-This step uploads a provided app apk and test apk to lambdatest. It then will execute the Espresso Tests for the provided apks in LambdaTest app automate.
+This step uploads a provided app apk and test apk to LambdaTest. It then will execute the Espresso Tests for the provided apks in LambdaTest app automate.
 
 
 ## How to use this Step
