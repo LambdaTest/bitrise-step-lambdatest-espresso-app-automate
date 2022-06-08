@@ -121,7 +121,7 @@ inputs:
       description: |
         The country code to simulate the location of the device to a particular Geo Location.
       is_required: false
-  - lambdatest_device_logs: "true"
+  - lambdatest_device_logs: true
     opts:
       title: Device Logs
       category: Automated Test Options
@@ -131,7 +131,7 @@ inputs:
       value_options:
         - "true"
         - "false"
-  - lambdatest_network_logs: "true"
+  - lambdatest_network_logs: true
     opts:
       title: Network Logs
       category: Automated Test Options
@@ -141,7 +141,7 @@ inputs:
       value_options:
         - "true"
         - "false"
-  - lambdatest_video: "true"
+  - lambdatest_video: true
     opts:
       title: Video
       category: Automated Test Options

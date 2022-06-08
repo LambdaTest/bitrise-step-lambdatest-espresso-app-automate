@@ -49,7 +49,6 @@ workflows:
         - lambdatest_username: $LAMBDATEST_USERNAME
         - lambdatest_access_key: $LAMBDATEST_ACCESS_KEY
         - lambdatest_device_list: $LAMBDATEST_DEVICE_LIST
-        - lambdatest_build_name: $LAMBDATEST_BUILD_NAME
     - script:
         inputs:
         - content: |
