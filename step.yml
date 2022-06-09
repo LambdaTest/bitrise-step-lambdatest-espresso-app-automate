@@ -16,9 +16,6 @@ description: |
 website: https://github.com/LambdaTest/bitrise-step-lambdatest-espresso-app-automate
 source_code_url: https://github.com/LambdaTest/bitrise-step-lambdatest-espresso-app-automate
 support_url: https://github.com/LambdaTest/bitrise-step-lambdatest-espresso-app-automate/issues
-host_os_tags:
-  - osx-10.10
-  - ubuntu-16.04
 
 project_type_tags:
   - android
