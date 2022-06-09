@@ -10,7 +10,7 @@
 title: |-
   LambdaTest App Automate - Espresso
 summary: |
-  Upload an app apk and an Espresso test apk to LambdaTest and run tests with App Automate.
+  Upload an app apk and an Espresso test apk to LambdaTest and run tests with App Automate. For more information, please check out this [document](https://www.lambdatest.com/support/docs/getting-started-with-espresso-testing/)
 description: |
   This step uploads a provided app apk and test apk to LambdaTest. It then will execute the Espresso Tests for the provided apks in LambdaTest's app automate.
 website: https://github.com/LambdaTest/bitrise-step-lambdatest-espresso-app-automate
@@ -113,7 +113,7 @@ inputs:
       description: |
         The time in seconds for maximum running time on a test in the build. The default value of Queue Timeout is 120 seconds.
       is_required: false
-  - lambdatest_geo_location: "FR"
+  - lambdatest_geo_location:
     opts:
       title: Geo Location
       category: Automated Test Options
@@ -121,7 +121,24 @@ inputs:
       description: |
         The country code to simulate the location of the device to a particular Geo Location.
       is_required: false
-  - lambdatest_device_logs: true
+  - lambdatest_tunnel: "false"
+    opts:
+      title: Tunnel
+      category: Automated Test Options
+      summary: Set this parameter if you want to enable local testing.
+      description: Set this parameter if you want to enable local testing. By default its set to false. Make sure only one of GeoLocation and Tunnel must be used in a single test.
+      is_required: false
+      value_options:
+        - "true"
+        - "false"
+  - lambdatest_tunnel_identifier:
+    opts:
+      title: "Local Identifier"
+      category: Automated Test Options
+      summary: If you are using same account to test multiple applications, you can setup named connection using the tunnelIdentifier option.
+      description: If you are using same account to test multiple applications, you can setup named connection using the tunnelIdentifier option.
+      is_required: false
+  - lambdatest_device_logs: "true"
     opts:
       title: Device Logs
       category: Automated Test Options
@@ -131,7 +148,7 @@ inputs:
       value_options:
         - "true"
         - "false"
-  - lambdatest_network_logs: true
+  - lambdatest_network_logs: "true"
     opts:
       title: Network Logs
       category: Automated Test Options
@@ -141,7 +158,7 @@ inputs:
       value_options:
         - "true"
         - "false"
-  - lambdatest_video: true
+  - lambdatest_video: "true"
     opts:
       title: Video
       category: Automated Test Options
