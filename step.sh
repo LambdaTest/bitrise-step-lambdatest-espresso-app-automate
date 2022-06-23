@@ -24,7 +24,7 @@ json=$( jq -n \
                 --arg device_logs "$lambdatest_device_logs" \
                 --arg network_logs "$lambdatest_network_logs" \
                 --arg video "$lambdatest_video" \
-                '{app: $app_url, testSuite: $test_url, device: $devices, build: $build, queueTimeout: $queue_timeout | tonumber, IdleTimeout: $idle_timeout | tonumber, geoLocation: $geo_location, tunnel: $tunnel | test("true"), tunnelIdentifier: $tunnel_identifier, devicelog: $device_logs | test("true"), network: $network_logs | test("true"), video: $video | test("true")}')
+                '{app: $app_url, testSuite: $test_url, device: $devices, build: $build, queueTimeout: $queue_timeout | tonumber, idleTimeout: $idle_timeout | tonumber, geoLocation: $geo_location, tunnel: $tunnel | test("true"), tunnelIdentifier: $tunnel_identifier, devicelog: $device_logs | test("true"), network: $network_logs | test("true"), video: $video | test("true")}')
 run_test_response="$(curl --location --request POST https://mobile-api.lambdatest.com/espresso/v1/build --header "Authorization: Basic ${BASICAUTH}" --header "Content-Type: application/json" --data-raw \ "$json")"
 build_id=$(echo "$run_test_response" | jq .buildId)
 
