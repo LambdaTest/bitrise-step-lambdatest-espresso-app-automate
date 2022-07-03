@@ -86,7 +86,7 @@ inputs:
         A list of available device and OS combinations can be found [here](https://www.lambdatest.com/list-of-real-devices)
       is_expand: true
       is_required: true
-  - lambdatest_build_name: "Untitled Espresso"
+  - lambdatest_build_name: "Framework-Untitled"
     opts:
       title: Build Name
       category: Automated Test Options
