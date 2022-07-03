@@ -76,7 +76,7 @@ inputs:
       is_expand: true
       is_required: true
       is_sensitive: true
-  - lambdatest_device_list: "\"OnePlus 6T-10\", \"Pixel 4-11\""
+  - lambdatest_device_list:
     opts:
       title: Device list
       category: Automated Test Options
