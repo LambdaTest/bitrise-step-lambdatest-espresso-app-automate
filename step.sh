@@ -1,12 +1,23 @@
 #!/bin/bash
 set -ex
+
 echo "uploading app apk to LambdaTest"
-upload_app_response="$(curl --location --request POST https://$lambdatest_username:$lambdatest_access_key@manual-api.lambdatest.com/app/uploadFramework --form type="espresso-android" --form appFile=@$app_apk_path)"
-app_url=$(echo "$upload_app_response" | jq .app_id)
+if [ -z "${app_apk_path##*http*}" ]; then
+    upload_app_response="$(curl --location --request POST https://$lambdatest_username:$lambdatest_access_key@manual-api.lambdatest.com/app/uploadFramework --form type="espresso-android" --form url=$app_apk_path)"
+    app_url=$(echo "$upload_app_response" | jq .app_id)
+else
+    upload_app_response="$(curl --location --request POST https://$lambdatest_username:$lambdatest_access_key@manual-api.lambdatest.com/app/uploadFramework --form type="espresso-android" --form appFile=@$app_apk_path)"
+    app_url=$(echo "$upload_app_response" | jq .app_id)
+fi
 
 echo "uploading test apk to LambdaTest"
-upload_test_response="$(curl --location --request POST https://$lambdatest_username:$lambdatest_access_key@manual-api.lambdatest.com/app/uploadFramework --form type="espresso-android" --form appFile=@$test_apk_path)"
-test_url=$(echo "$upload_test_response" | jq .app_id)
+if [ -z "${test_apk_path##*http*}" ]; then
+    upload_test_response="$(curl --location --request POST https://$lambdatest_username:$lambdatest_access_key@manual-api.lambdatest.com/app/uploadFramework --form type="espresso-android" --form url=$test_apk_path)"
+    test_url=$(echo "$upload_test_response" | jq .app_id)
+else
+    upload_test_response="$(curl --location --request POST https://$lambdatest_username:$lambdatest_access_key@manual-api.lambdatest.com/app/uploadFramework --form type="espresso-android" --form appFile=@$test_apk_path)"
+    test_url=$(echo "$upload_test_response" | jq .app_id)
+fi
 
 echo "starting automated tests"
 json=$( jq -n \
