@@ -70,7 +70,7 @@ inputs:
       category: Automated Test Options
       summary: A comma separated list of desired test devices
       description: |
-        Provide a comma separated list of Device and OS version you want to run your tests on, with quotes. Acceptable format example: "Google Pixel-8.0", "Google Pixel-7.1"
+        Provide a comma separated list of Device and OS version you want to run your tests on, with quotes. Acceptable format example: "Galaxy S10-9", "OnePlus 6T-10"
         A list of available device and OS combinations can be found [here](https://www.lambdatest.com/list-of-real-devices)
       is_expand: true
       is_required: true
