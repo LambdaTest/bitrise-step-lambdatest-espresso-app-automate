@@ -96,7 +96,7 @@ inputs:
       category: Automated Test Options
       summary: The time in seconds for maximum running time on a test in the build.
       description: |
-        The time in seconds for maximum running time on a test in the build. The default value of Queue Timeout is 120 seconds.
+        The time in seconds for maximum running time on a test in the build. The default value of Idle Timeout is 120 seconds.
       is_required: false
   - lambdatest_geo_location:
     opts:
@@ -116,12 +116,12 @@ inputs:
       value_options:
         - "true"
         - "false"
-  - lambdatest_tunnel_identifier:
+  - lambdatest_tunnel_name:
     opts:
-      title: "Local Identifier"
+      title: Tunnel Name
       category: Automated Test Options
-      summary: If you are using same account to test multiple applications, you can setup named connection using the tunnelIdentifier option.
-      description: If you are using same account to test multiple applications, you can setup named connection using the tunnelIdentifier option.
+      summary: Your Tunnel Name
+      description: Name of the tunnel 
       is_required: false
   - lambdatest_device_logs: "true"
     opts:
