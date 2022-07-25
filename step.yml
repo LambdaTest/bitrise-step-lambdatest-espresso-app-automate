@@ -123,7 +123,7 @@ inputs:
       summary: Your Tunnel Name
       description: Name of the tunnel 
       is_required: false
-  - lambdatest_device_logs: "true"
+  - lambdatest_device_logs: "false"
     opts:
       title: Device Logs
       category: Automated Test Options
@@ -133,7 +133,7 @@ inputs:
       value_options:
         - "true"
         - "false"
-  - lambdatest_network_logs: "true"
+  - lambdatest_network_logs: "false"
     opts:
       title: Network Logs
       category: Automated Test Options
