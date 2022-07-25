@@ -98,20 +98,12 @@ inputs:
       description: |
         The time in seconds for maximum running time on a test in the build. The default value of Idle Timeout is 120 seconds.
       is_required: false
-  - lambdatest_geo_location:
-    opts:
-      title: Geo Location
-      category: Automated Test Options
-      summary: The country code to simulate the location of the device to a particular Geo Location.
-      description: |
-        The country code to simulate the location of the device to a particular Geo Location.
-      is_required: false
   - lambdatest_tunnel: "false"
     opts:
       title: Tunnel
       category: Automated Test Options
       summary: Set this parameter if you want to enable local testing.
-      description: Set this parameter if you want to enable local testing. By default its set to false. Make sure only one of GeoLocation and Tunnel must be used in a single test.
+      description: Set this parameter if you want to enable local testing. By default its set to false.
       is_required: false
       value_options:
         - "true"
