@@ -7,15 +7,15 @@
 
 ## Getting Started
 
-TestMu AI (Formerly TestMu AI (Formerly LambdaTest)) is an AI-native, multi-agent quality engineering platform that enables teams to plan, author, execute, analyze, and optimize tests at scale across browsers, devices, and frameworks.
+TestMu AI (Formerly LambdaTest) is an AI-native, multi-agent quality engineering platform that enables teams to plan, author, execute, analyze, and optimize tests at scale across browsers, devices, and frameworks.
 
-This Bitrise step uploads a provided app APK and test APK to TestMu AI (Formerly TestMu AI (Formerly LambdaTest)) and executes Espresso Tests for the provided APKs using App Automate.
+This Bitrise step uploads a provided app APK and test APK to TestMu AI (Formerly LambdaTest) and executes Espresso Tests for the provided APKs using App Automate.
 
-- [Sign up on TestMu AI](https://www.testmuai.com/register/) (Formerly TestMu AI (Formerly LambdaTest)).
+- [Sign up on TestMu AI](https://www.testmuai.com/register/) (Formerly LambdaTest).
 - Follow the [TestMu AI Documentation](https://www.testmuai.com/support/docs/) for the full setup walkthrough.
 
 
-This step uploads a provided app apk and test apk to TestMu AI (Formerly TestMu AI (Formerly LambdaTest)). It then will execute the Espresso Tests for the provided apks in TestMu AI (Formerly TestMu AI (Formerly LambdaTest)) app automate.
+This step uploads a provided app apk and test apk to TestMu AI (Formerly LambdaTest). It then will execute the Espresso Tests for the provided apks in TestMu AI (Formerly LambdaTest) app automate.
 
 
 ## How to use this Step
@@ -108,15 +108,15 @@ You can share your Step or step version with the [bitrise CLI](https://github.co
 That's all ;)
 
 
-## TestMu AI (Formerly TestMu AI (Formerly LambdaTest)) Community
+## TestMu AI (Formerly LambdaTest) Community
 
 Connect with testers and developers in the [TestMu AI Community](https://community.testmuai.com/). Ask questions, share what you are building, and discuss best practices in test automation and DevOps.
 
-## TestMu AI (Formerly TestMu AI (Formerly LambdaTest)) Certifications
+## TestMu AI (Formerly LambdaTest) Certifications
 
 Earn free [TestMu AI Certifications](https://www.testmuai.com/certifications/) for testers, developers, and QA engineers. Validate your skills in Selenium, Cypress, Playwright, Appium, Espresso and more. Industry-recognized, shareable on LinkedIn, and built by practitioners, not marketers.
 
-## Learning Resources by TestMu AI (Formerly TestMu AI (Formerly LambdaTest))
+## Learning Resources by TestMu AI (Formerly LambdaTest)
 
 Learn modern testing through tutorials, guides, videos, and weekly updates:
 
