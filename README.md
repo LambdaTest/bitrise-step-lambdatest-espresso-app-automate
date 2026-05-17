@@ -18,6 +18,10 @@ With TestMu AI (Formerly LambdaTest), you can run Espresso Tests With Bitrise CI
 
 - A TestMu AI (Formerly LambdaTest) account with your username and access key
 
+### Prerequisites
+
+- A TestMu AI (Formerly LambdaTest) account with your username and access key
+
 ## How to use this Step
 
 Can be run directly with the [bitrise CLI](https://github.com/bitrise-io/bitrise),
