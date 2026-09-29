@@ -1,9 +1,9 @@
 title: |-
-  LambdaTest App Automate - Espresso
+  TestMu AI (Formerly LambdaTest) App Automate - Espresso
 summary: |
-  Upload an app apk and an Espresso test apk to LambdaTest and run tests with App Automate. For more information, please check out this [document](https://www.lambdatest.com/support/docs/getting-started-with-espresso-testing/)
+  Uploads an app APK and an Espresso test APK to TestMu AI and runs the tests on real devices. For more information, please check out this [document](https://www.testmuai.com/support/docs/getting-started-with-espresso-testing/).
 description: |
-  This step uploads a provided app apk and test apk to LambdaTest. It then will execute the Espresso Tests for the provided apks in LambdaTest's app automate.
+  This Step uploads a provided app APK and test APK to TestMu AI (Formerly LambdaTest), then executes the Espresso tests for those apks on TestMu AI App Automation.
 website: https://github.com/LambdaTest/bitrise-step-lambdatest-espresso-app-automate
 source_code_url: https://github.com/LambdaTest/bitrise-step-lambdatest-espresso-app-automate
 support_url: https://github.com/LambdaTest/bitrise-step-lambdatest-espresso-app-automate/issues
@@ -71,7 +71,7 @@ inputs:
       summary: A comma separated list of desired test devices
       description: |
         Provide a comma separated list of Device and OS version you want to run your tests on, with quotes. Acceptable format example: "Galaxy S10-9", "OnePlus 6T-10".
-        A list of available device and OS combinations can be found [here](https://www.lambdatest.com/capabilities-generator/).
+        A list of available device and OS combinations can be found [here](https://www.testmuai.com/capabilities-generator/).
       is_expand: true
       is_required: true
   - lambdatest_build_name:
