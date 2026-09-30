@@ -10,7 +10,6 @@ support_url: https://github.com/LambdaTest/bitrise-step-lambdatest-espresso-app-
 
 project_type_tags:
   - android
-  - xamarin
 
 type_tags:
   - test
